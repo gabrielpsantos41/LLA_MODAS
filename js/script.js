@@ -16,6 +16,11 @@
     initProductFilter();
     initAOS();
     highlightActiveNav();
+
+    // Atualiza ano automaticamente
+document.querySelectorAll('.footer-year').forEach(function(el) {
+  el.textContent = new Date().getFullYear();
+});
   });
 
   /* --------------------------------------------------------
