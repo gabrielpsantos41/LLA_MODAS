@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Produtos — L.L.A Modas | Roupas Femininas, Masculinas e Plus Size</title>
+  <meta name="description" content="Explore a coleção da L.L.A Modas: moda feminina, masculina e plus size com excelente custo-benefício em São Paulo." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Produtos — L.L.A Modas" />
+  <meta property="og:description" content="Roupas femininas, masculinas e plus size selecionadas com cuidado." />
+  <meta property="og:image" content="img/hero.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/png" href="img/logo.png" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR 
+  ============================================================ -->
+  <nav class="navbar navbar-expand-lg scrolled" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        L.<span>L</span>.A<br>
+        <small>MODAS</small>
+      </a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 py-3 py-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link active" href="produtos.html">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#localizacao">Localização</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contato">Contato</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn-yellow" href="https://wa.me/5511971359114?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20as%20roupas%20da%20L.L.A%20Modas." target="_blank" rel="noopener">
+              <i class="bi bi-whatsapp"></i> Fale no WhatsApp
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO INTERNO
+  ============================================================ -->
+  <div class="page-hero">
+    <div class="page-hero-content" data-aos="fade-up">
+      <span class="section-tag" style="background:rgba(249,168,37,.15);border-color:rgba(249,168,37,.4);color:var(--yellow)">
+        Nossa Coleção
+      </span>
+      <h1>Nossos <span style="color:var(--yellow)">Produtos</span></h1>
+      <p>Peças selecionadas com cuidado para você se vestir bem pagando pouco.</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FILTROS DE CATEGORIA
+  ============================================================ -->
+  <div style="background:var(--white);padding:40px 0 0">
+    <div class="container">
+      <div class="cat-filter" data-aos="fade-up">
+        <button class="cat-btn active" data-filter="todos">Todos</button>
+        <button class="cat-btn" data-filter="feminino">Moda Feminina</button>
+        <button class="cat-btn" data-filter="masculino">Moda Masculina</button>
+        <button class="cat-btn" data-filter="plus">Plus Size</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       CATEGORIA: MODA FEMININA
+  ============================================================ -->
+  <section class="cat-section" id="feminino" data-cat="feminino">
+    <div class="container">
+      <div class="cat-section-head" data-aos="fade-right">
+        <div class="cat-section-icon"><i class="bi bi-gender-female"></i></div>
+        <div>
+          <h2>Moda <span class="text-red">Feminina</span></h2>
+          <p>Elegância e estilo para todas as ocasiões</p>
+        </div>
+      </div>
+
+      <div class="stock-alert" data-aos="fade-up">
+        <i class="bi bi-info-circle-fill"></i>
+        Estoque sujeito à disponibilidade. Consulte disponibilidade e tamanhos pelo WhatsApp.
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+          <div class="produto-card">
+            <div class="produto-img">
+              <img data-src="img/moda1.jpg" src="img/moda1.jpg" alt="Blusa Floral" loading="lazy" />
+              <span class="produto-badge">Destaque</span>
+            </div>
+            <div class="produto-body">
+              <div class="produto-cat">Moda Feminina</div>
+              <div class="produto-name">Blusa Floral Estampada</div>
+              <p class="produto-desc">Blusa leve e elegante, perfeita para o dia a dia ou uma saída especial.</p>
+              <div class="produto-avail"><i class="bi bi-check-circle-fill"></i> Disponível em vários tamanhos</div>
+              <button class="btn-wa" onclick="abrirWhatsApp('Olá! Gostaria de consultar a disponibilidade da Blusa Floral Estampada da L.L.A Modas.')">
+                <i class="bi bi-whatsapp"></i> Consultar Disponibilidade
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+          <div class="produto-card">
+            <div class="produto-img">
+              <img data-src="img/moda1.jpg" src="img/moda1.jpg" alt="Vestido Casual" loading="lazy" />
+            </div>
+            <div class="produto-body">
+              <div class="produto-cat">Moda Feminina</div>
+              <div class="produto-name">Vestido Casual Midi</div>
+              <p class="produto-desc">Vestido midi versátil, ideal para passeios, trabalho ou eventos.</p>
+              <div class="produto-avail"><i class="bi bi-check-circle-fill"></i> Disponível em vários tamanhos</div>
+              <button class="btn-wa" onclick="abrirWhatsApp('Olá! Gostaria de consultar a disponibilidade do Vestido Casual Midi da L.L.A Modas.')">
+                <i class="bi bi-whatsapp"></i> Consultar Disponibilidade
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+          <div class="produto-card">
+            <div class="produto-img">
+              <img data-src="img/moda1.jpg" src="img/moda1.jpg" alt="Calça Social" loading="lazy" />
+              <span class="produto-badge" style="background:var(--yellow);color:var(--black)">Novo</span>
+            </div>
+            <div class="produto-body">
+              <div class="produto-cat">Moda Feminina</div>
+              <div class="produto-name">Calça Social Skinny</div>
+              <p class="produto-desc">Calça skinny elegante que combina conforto e sofisticação.</p>
+              <div class="produto-avail"><i class="bi bi-check-circle-fill"></i> Disponível em vários tamanhos</div>
+              <button class="btn-wa" onclick="abrirWhatsApp('Olá! Gostaria de consultar a disponibilidade da Calça Social Skinny da L.L.A Modas.')">
+                <i class="bi bi-whatsapp"></i> Consultar Disponibilidade
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+          <div class="produto-card">
+            <div class="produto-img">
+              <img data-src="img/moda1.jpg" src="img/moda1.jpg" alt="Conjunto Feminino" loading="lazy" />
+            </div>
+            <div class="produto-body">
+              <div class="produto-cat">Moda Feminina</div>
+              <div class="produto-name">Conjunto Social</div>
+              <p class="produto-desc">Conjunto elegante pronto para diversas ocasiões, do trabalho ao lazer.</p>
+              <div class="produto-avail"><i class="bi bi-check-circle-fill"></i> Disponível em vários tamanhos</div>
+              <button class="btn-wa" onclick="abrirWhatsApp('Olá! Gostaria de consultar a disponibilidade do Conjunto Social Feminino da L.L.A Modas.')">
+                <i class="bi bi-whatsapp"></i> Consultar Disponibilidade
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BANNER INTERMEDIÁRIO
+  ============================================================ -->
+  <div style="background:var(--gray);padding:48px 0" data-aos="fade-up">
+    <div class="container text-center">
+      <p style="font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:8px">Estoque sempre renovado</p>
+      <h3 style="font-size:1.5rem;font-weight:800;margin-bottom:16px">Não encontrou o que procura?</h3>
+      <p style="color:#666;margin-bottom:24px">Fale com a gente pelo WhatsApp e consulte peças específicas, tamanhos e novidades do acervo.</p>
+      <a href="https://wa.me/5511971359114?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20pe%C3%A7as%20espec%C3%ADficas%20da%20L.L.A%20Modas." target="_blank" rel="noopener" class="btn-red">
+        <i class="bi bi-whatsapp"></i> Chamar no WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       CATEGORIA: MODA MASCULINA
+  ============================================================ -->
+  <section class="cat-section" id="masculino" data-cat="masculino">
+    <div class="container">
+      <div class="cat-section-head" data-aos="fade-right">
+        <div class="cat-section-icon"><i class="bi bi-gender-male"></i></div>
+        <div>
+          <h2>Moda <span class="text-red">Masculina</span></h2>
+          <p>Do casual ao social, sempre com estilo</p>
+        </div>
+      </div>
+
+      <div class="stock-alert" data-aos="fade-up">
+        <i class="bi bi-info-circle-fill"></i>
+        Estoque sujeito à disponibilidade. Consulte disponibilidade e tamanhos pelo WhatsApp.
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+          <div class="produto-card">
+            <div class="produto-img">
+              <img data-src="img/moda3.jpg" src="img/moda3.jpg" alt="Camisa Social" loading="lazy" />
+              <span class="produto-badge">Destaque</span>
+            </div>
+            <div class="produto-body">
+              <div class="produto-cat">Moda Masculina</div>
+              <div class="produto-name">Camisa Social Slim</div>
+              <p class="produto-desc">Camisa social slim fit, perfeita para o ambiente de trabalho ou eventos.</p>
+              <div class="produto-avail"><i class="bi bi-check-circle-fill"></i> Disponível em vários tamanhos</div>
+              <button class="btn-wa" onclick="abrirWhatsApp('Olá! Gostaria de consultar a disponibilidade da Camisa Social Slim da L.L.A Modas.')">
+                <i class="bi bi-whatsapp"></i> Consultar Disponibilidade
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+          <div class="produto-card">
+            <div class="produto-img">
+              <img data-src="img/moda3.jpg" src="img/moda3.jpg" alt="Calça Jeans" loading="lazy" />
+            </div>
+            <div class="produto-body">
+              <div class="produto-cat">Moda Masculina</div>
+              <div class="produto-name">Calça Jeans Tradicional</div>
+              <p class="produto-desc">Jeans clássico e confortável para o uso diário, do casual ao social.</p>
+              <div class="produto-avail"><i class="bi bi-check-circle-fill"></i> Disponível em vários tamanhos</div>
+              <button class="btn-wa" onclick="abrirWhatsApp('Olá! Gostaria de consultar a disponibilidade da Calça Jeans Tradicional da L.L.A Modas.')">
+                <i class="bi bi-whatsapp"></i> Consultar Disponibilidade
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+          <div class="produto-card">
+            <div class="produto-img">
+              <img data-src="img/moda3.jpg" src="img/moda3.jpg" alt="Polo Masculina" loading="lazy" />
+            </div>
+            <div class="produto-body">
+              <div class="produto-cat">Moda Masculina</div>
+              <div class="produto-name">Camiseta Polo</div>
+              <p class="produto-desc">Polo clássica e elegante, ideal para looks casuais e semi-formais.</p>
+              <div class="produto-avail"><i class="bi bi-check-circle-fill"></i> Disponível em vários tamanhos</div>
+              <button class="btn-wa" onclick="abrirWhatsApp('Olá! Gostaria de consultar a disponibilidade da Camiseta Polo da L.L.A Modas.')">
+                <i class="bi bi-whatsapp"></i> Consultar Disponibilidade
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+          <div class="produto-card">
+            <div class="produto-img">
+              <img data-src="img/moda3.jpg" src="img/moda3.jpg" alt="Jaqueta Masculina" loading="lazy" />
+              <span class="produto-badge" style="background:var(--yellow);color:var(--black)">Novo</span>
+            </div>
+            <div class="produto-body">
+              <div class="produto-cat">Moda Masculina</div>
+              <div class="produto-name">Jaqueta Casual</div>
+              <p class="produto-desc">Jaqueta leve e moderna para composições casuais com estilo.</p>
+              <div class="produto-avail"><i class="bi bi-check-circle-fill"></i> Disponível em vários tamanhos</div>
+              <button class="btn-wa" onclick="abrirWhatsApp('Olá! Gostaria de consultar a disponibilidade da Jaqueta Casual Masculina da L.L.A Modas.')">
+                <i class="bi bi-whatsapp"></i> Consultar Disponibilidade
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CATEGORIA: PLUS SIZE
+  ============================================================ -->
+  <section class="cat-section" id="plus" data-cat="plus" style="background:var(--white)">
+    <div class="container">
+      <div class="cat-section-head" data-aos="fade-right">
+        <div class="cat-section-icon"><i class="bi bi-heart"></i></div>
+        <div>
+          <h2>Moda <span class="text-red">Plus Size</span></h2>
+          <p>Moda inclusiva para todos os corpos</p>
+        </div>
+      </div>
+
+      <div class="stock-alert" data-aos="fade-up">
+        <i class="bi bi-info-circle-fill"></i>
+        Estoque sujeito à disponibilidade. Consulte disponibilidade e tamanhos pelo WhatsApp.
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+          <div class="produto-card">
+            <div class="produto-img">
+              <img data-src="img/plus-size.jpg" src="img/plus-size.jpg" alt="Vestido Plus Size" loading="lazy" />
+              <span class="produto-badge">Destaque</span>
+            </div>
+            <div class="produto-body">
+              <div class="produto-cat">Plus Size</div>
+              <div class="produto-name">Vestido Floral Plus</div>
+              <p class="produto-desc">Vestido leve e elegante desenvolvido especialmente para valorizar curvas.</p>
+              <div class="produto-avail"><i class="bi bi-check-circle-fill"></i> Disponível em vários tamanhos</div>
+              <button class="btn-wa" onclick="abrirWhatsApp('Olá! Gostaria de consultar a disponibilidade do Vestido Floral Plus Size da L.L.A Modas.')">
+                <i class="bi bi-whatsapp"></i> Consultar Disponibilidade
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+          <div class="produto-card">
+            <div class="produto-img">
+              <img data-src="img/plus-size.jpg" src="img/plus-size.jpg" alt="Blusa Plus Size" loading="lazy" />
+            </div>
+            <div class="produto-body">
+              <div class="produto-cat">Plus Size</div>
+              <div class="produto-name">Blusa Ampla Plus</div>
+              <p class="produto-desc">Blusa ampla e confortável com modelagem pensada para valorizar o corpo.</p>
+              <div class="produto-avail"><i class="bi bi-check-circle-fill"></i> Disponível em vários tamanhos</div>
+              <button class="btn-wa" onclick="abrirWhatsApp('Olá! Gostaria de consultar a disponibilidade da Blusa Ampla Plus Size da L.L.A Modas.')">
+                <i class="bi bi-whatsapp"></i> Consultar Disponibilidade
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+          <div class="produto-card">
+            <div class="produto-img">
+              <img data-src="img/plus-size.jpg" src="img/plus-size.jpg" alt="Calça Plus Size" loading="lazy" />
+              <span class="produto-badge" style="background:var(--yellow);color:var(--black)">Novo</span>
+            </div>
+            <div class="produto-body">
+              <div class="produto-cat">Plus Size</div>
+              <div class="produto-name">Calça Conforto Plus</div>
+              <p class="produto-desc">Calça de alta elasticidade e conforto para o dia a dia com estilo.</p>
+              <div class="produto-avail"><i class="bi bi-check-circle-fill"></i> Disponível em vários tamanhos</div>
+              <button class="btn-wa" onclick="abrirWhatsApp('Olá! Gostaria de consultar a disponibilidade da Calça Conforto Plus Size da L.L.A Modas.')">
+                <i class="bi bi-whatsapp"></i> Consultar Disponibilidade
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+          <div class="produto-card">
+            <div class="produto-img">
+              <img data-src="img/plus-size.jpg" src="img/plus-size.jpg" alt="Conjunto Plus Size" loading="lazy" />
+            </div>
+            <div class="produto-body">
+              <div class="produto-cat">Plus Size</div>
+              <div class="produto-name">Conjunto Casual Plus</div>
+              <p class="produto-desc">Conjunto casual confortável que une estilo e liberdade de movimento.</p>
+              <div class="produto-avail"><i class="bi bi-check-circle-fill"></i> Disponível em vários tamanhos</div>
+              <button class="btn-wa" onclick="abrirWhatsApp('Olá! Gostaria de consultar a disponibilidade do Conjunto Casual Plus Size da L.L.A Modas.')">
+                <i class="bi bi-whatsapp"></i> Consultar Disponibilidade
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BANNER FINAL
+  ============================================================ -->
+  <div id="banner-promo" style="padding:70px 0">
+    <div class="container text-center position-relative" style="z-index:2" data-aos="zoom-in">
+      <h2 class="banner-promo-title">Encontre seu novo estilo hoje mesmo!</h2>
+      <p class="banner-promo-sub">Estoque sempre renovado. Entre em contato e confira o que temos disponível.</p>
+      <a href="https://wa.me/5511971359114?text=Ol%C3%A1!%20Vi%20os%20produtos%20no%20site%20e%20quero%20saber%20mais%20sobre%20a%20L.L.A%20Modas." target="_blank" rel="noopener" class="btn-yellow">
+        <i class="bi bi-whatsapp"></i> Falar no WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="footer-brand">L.<span>L</span>.A<br><small>MODAS</small></div>
+          <p class="footer-desc mt-3">
+            Loja de moda feminina, masculina e plus size em São Paulo. Roupas selecionadas com cuidado.
+          </p>
+          <div class="footer-social">
+            <a href="https://wa.me/5511971359114" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <h5 class="footer-heading">Links Rápidos</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <h5 class="footer-heading">Categorias</h5>
+          <ul class="footer-links">
+            <li><a href="#feminino">Moda Feminina</a></li>
+            <li><a href="#masculino">Moda Masculina</a></li>
+            <li><a href="#plus">Plus Size</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="footer-heading">Informações</h5>
+          <div class="footer-info-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>Av. São Miguel, 2202 — Vila Buenos Aires — São Paulo, SP</span>
+          </div>
+          <div class="footer-info-item">
+            <i class="bi bi-telephone-fill"></i>
+            <a href="https://wa.me/5511971359114" target="_blank" rel="noopener" style="color:rgba(255,255,255,.6)">(11) 97135-9114</a>
+          </div>
+          <div class="footer-info-item">
+            <i class="bi bi-clock-fill"></i>
+            <div><div>Seg: 11h–18h30</div><div>Ter–Sáb: 10h–18h30</div><div>Dom: Fechado</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        © 2024 <span>L.L.A Modas</span>. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Flutuante -->
+  <div id="whatsapp-float">
+    <a href="https://wa.me/5511971359114?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20as%20roupas%20da%20L.L.A%20Modas."
+       target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
+
+  <button id="back-to-top" aria-label="Voltar ao topo">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
