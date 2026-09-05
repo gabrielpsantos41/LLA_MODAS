@@ -24,8 +24,17 @@
   --shadow-lg: 0 8px 40px rgba(198,40,40,.15);
   --radius: 12px;
 }
-
+z
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 html { scroll-behavior: smooth; }
 
@@ -228,11 +237,34 @@ section { padding: 90px 0; }
 /*  HERO  */
 #hero {
   min-height: 100vh;
+  min-height: 100dvh; 
   position: relative;
   display: flex;
   align-items: center;
   background: url('../img/hero.jpg') center center / cover no-repeat fixed;
   overflow: hidden;
+}
+
+
+@media (max-width: 991px) {
+  #hero {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+@media (max-width: 991px) {
+  #hero .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .hero-overlay {
